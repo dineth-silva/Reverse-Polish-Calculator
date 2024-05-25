@@ -1,0 +1,41 @@
+#include <ctype.h>     // Include the ctype.h library for character handling functions
+#include "calculator.h" // Include the header file for the calculator functions and definitions
+
+int getch(void);       // Declare the function that gets a character from input
+void ungetch(int);     // Declare the function that pushes a character back to the input
+
+/* getOp: get the next operator or numeric operand */
+int getOp(char s[]) {
+    int i, c;
+
+    // Skip any whitespace or tab characters
+    while ((s[0] = c = getch()) == ' ' || c == '\t')
+        ;
+
+    s[1] = '\0'; // Null-terminate the string with the first character
+
+    // If the character is not a digit and not a decimal point, return it (it's an operator)
+    if (!isdigit(c) && c != '.')
+        return c;  /* not a number */
+
+    i = 0;
+
+    // If the character is a digit, collect the integer part of the number
+    if (isdigit(c)) 
+        while (isdigit(s[++i] = c = getch()))
+            ;
+
+    // If the character is a decimal point, collect the fractional part of the number
+    if (c == '.')
+        while (isdigit(s[++i] = c = getch()))
+            ;
+
+    s[i] = '\0'; // Null-terminate the string after the number
+
+    // If we've read past the number, push the last character back to the input buffer
+    if (c != EOF)
+        ungetch(c);
+
+    // Return a signal indicating that a number was found
+    return NUMBER;
+}

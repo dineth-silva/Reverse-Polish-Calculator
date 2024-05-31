@@ -19,3 +19,5 @@ Parses input to identify operators and numbers.
 Manages input buffering to support reading and unreading characters.
 6. docs-testing 
 Provides documentation and develops test cases to verify program functionality.
+7. feature/header-file
+calculator.h- This header file  declares all functions and variables, which are defined in the corresponding source files.

@@ -1,0 +1,21 @@
+About Reverse-Polish-Calculator
+
+## Project Overview
+This project is a Reverse Polish Notation (RPN) calculator implemented in the C programming language. RPN is a postfix notation wherein operators follow their operands, eliminating the need for parentheses to define operation precedence. This simplifies the calculation process, particularly when implemented using a stack-based approach.
+
+## Branch Creation Process
+The project was divided into six logical modules to enable collaborative development by multiple team members (6). Each module was developed in isolation on its own branch and merged into the main branch after thorough testing and validation. This modular approach ensured that each team member could work independently without causing integration issues.
+
+## Branch Descriptions
+1. main-control 
+Handles the main function and overall program control flow.
+2. stack-ops 
+Implements stack operations for pushing and popping values.
+3. Ascii-to-float 
+Converts ASCII strings to double precision floating-point numbers.
+4. operator-handling
+Parses input to identify operators and numbers.
+5. input-buffer 
+Manages input buffering to support reading and unreading characters.
+6. docs-testing 
+Provides documentation and develops test cases to verify program functionality.

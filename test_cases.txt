@@ -1,0 +1,55 @@
+Test cases for Reverse-Polish-Calculator
+1. Test Case 1- Simple Addition
+i. Input- 3 4 +
+ii. Expected Output- 7 
+
+
+2. Test Case 2- Mixed Operations
+i. Input- 5 1 2 + 4 * + 3 -
+ii. Expected Output- 14
+
+
+3. Test Case 3- Division by Zero
+i. Input- 5 0 /
+ii. Expected Output- error: zero divisor! 
+
+
+4. Test Case 4- Subtraction
+i. Input- 6 4 -
+ii. Expected Output- 2
+
+
+5. Test Case 5- Multiplication
+i. Input- 8 4 *
+ii. Expected Output- 32
+
+
+6. Test Case 6- Division
+i. Input- 10 4 /
+ii. Expected Output- 2.5
+ 
+
+7. Test Case 7- Subtraction and Multiplication
+i. Input- 6 2 – 3 *
+ii. Expected Output- 12
+ 
+
+8. Test Case 8- Floating Point Number Addition 
+i. Input- 2.5 3.3 +
+ii. Expected Output- 5.8 
+
+
+9. Test Case 9- Complex expressions
+i. Input- 15 7 1 1 + - / 3 * 2 1 1 + + -
+ii. Expected Output-5 
+
+ 
+10. Test Case 10- Float and Decimal Operations
+i. Input- 3 4.5 +
+ii. Expected Output- 7.5
+
+ 
+
+
+
+
